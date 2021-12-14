@@ -143,8 +143,8 @@ export default class TableBody extends Vue {
     width: 1100px;
   }
   .table-values {
-    margin-left: 0;
-    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 </style>
