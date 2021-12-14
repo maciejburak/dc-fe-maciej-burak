@@ -37,17 +37,17 @@ export default class TableHeader extends Vue {}
   padding-right: 80px;
 }
 .property {
-  color: #A9B1BD;
+  color: #a9b1bd;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  width:134px;
+  width: 134px;
 }
-@media(max-width: 1100px){
-  .table-header{
+@media (max-width: 1100px) {
+  .table-header {
     width: 1100px;
   }
-  .table-properties{
+  .table-properties {
     padding-left: 0;
     padding-right: 0;
   }

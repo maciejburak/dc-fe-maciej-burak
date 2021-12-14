@@ -61,8 +61,8 @@ export default class TableBody extends Vue {
       return "S01E" + lastEpisodeNumber;
     else if (parseInt(lastEpisodeNumber) > 11) {
       return `S0${
-        Math.floor((parseInt(lastEpisodeNumber) - 11)/10 + 1) +
-        ((parseInt(lastEpisodeNumber)-11) % 10 !== 0
+        Math.floor((parseInt(lastEpisodeNumber) - 11) / 10 + 1) +
+        ((parseInt(lastEpisodeNumber) - 11) % 10 !== 0
           ? "E0" + (parseInt(lastEpisodeNumber) % 10)
           : "E10")
       }`;
@@ -138,11 +138,11 @@ export default class TableBody extends Vue {
   color: white;
   background: #11b0c8;
 }
-@media(max-width: 1100px){
-  .tableBody{
+@media (max-width: 1100px) {
+  .tableBody {
     width: 1100px;
   }
-  .table-values{
+  .table-values {
     margin-left: 0;
     margin-right: 0;
   }

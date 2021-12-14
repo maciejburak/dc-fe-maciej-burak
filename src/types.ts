@@ -11,5 +11,5 @@ export interface Character {
   url: string;
 }
 export interface State {
-  favourites: Array<Character>
+  favourites: Array<Character>;
 }

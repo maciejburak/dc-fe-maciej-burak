@@ -48,10 +48,24 @@ export default class SearchBar extends Vue {
   selectedProperty = "Name";
   searchedPhrase = "";
   search() {
-    this.$emit("searchedProperty", {
-      phrase: this.searchedPhrase,
-      type: this.selectedProperty,
-    });
+    if (
+      this.searchedPhrase.match(/^[a-zA-Z]+$/) &&
+      this.selectedProperty === "Identifier"
+    ) {
+      alert("When you search identifier you need to pass number");
+      this.searchedPhrase = "";
+    } else if (
+      this.searchedPhrase.match(/^[a-zA-Z]+$/) &&
+      this.selectedProperty === "Episode"
+    ) {
+      alert("When you search episode you need to pass number");
+      this.searchedPhrase = "";
+    } else {
+      this.$emit("searchedProperty", {
+        phrase: this.searchedPhrase,
+        type: this.selectedProperty,
+      });
+    }
   }
 }
 </script>

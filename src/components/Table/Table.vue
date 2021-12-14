@@ -22,7 +22,10 @@
       <h1>Didn't find results for this phrase</h1>
     </div>
     <TableBody v-else :characters="characters" />
-    <div class="page-container" v-if="pages !== 0 && activeCart === 'AllCharacters' ">
+    <div
+      class="page-container"
+      v-if="pages !== 0 && activeCart === 'AllCharacters'"
+    >
       <button class="arrow-button" @click="changePage('-')">
         <span class="material-icons"> arrow_left </span>
       </button>
@@ -310,42 +313,42 @@ export default class Table extends Vue {
   color: #11b0c8;
   border-bottom: solid 4px #11b0c8;
 }
-@media(max-width: 1100px){
-  .table{
+@media (max-width: 1100px) {
+  .table {
     max-width: 1100px;
     overflow-x: scroll;
   }
-  .carts{
+  .carts {
     margin-left: 40px;
   }
-  .page-container{
+  .page-container {
     justify-content: center;
-    margin-left:20px;
+    margin-left: 20px;
   }
 }
-@media(max-width: 950px){
-  .page-container{
-    width:100vw;
+@media (max-width: 950px) {
+  .page-container {
+    width: 100vw;
   }
 }
-@media(max-width: 850px){
-  .page-container{
-    width:120vw;
+@media (max-width: 850px) {
+  .page-container {
+    width: 120vw;
   }
 }
-@media(max-width: 700px){
-  .page-container{
-    width:140vw;
+@media (max-width: 700px) {
+  .page-container {
+    width: 140vw;
   }
 }
-@media(max-width: 570px){
-  .page-container{
-    width:180vw;
+@media (max-width: 570px) {
+  .page-container {
+    width: 180vw;
   }
 }
-@media(max-width: 440px){
-  .page-container{
-    width:220vw;
+@media (max-width: 440px) {
+  .page-container {
+    width: 220vw;
   }
 }
 </style>

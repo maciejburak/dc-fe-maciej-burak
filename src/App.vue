@@ -1,14 +1,14 @@
 <template>
   <div id="app">
     <SearchBar @searchedProperty="(payload) => (searchedProperty = payload)" />
-    <Table :searchedProperty="searchedProperty"/>
+    <Table :searchedProperty="searchedProperty" />
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue } from "vue-property-decorator";
 import SearchBar from "./components/SearchBar/SearchBar.vue";
-import Table from './components/Table/Table.vue'
+import Table from "./components/Table/Table.vue";
 
 @Component({
   components: {
@@ -17,7 +17,7 @@ import Table from './components/Table/Table.vue'
   },
 })
 export default class App extends Vue {
-    searchedProperty = {};
+  searchedProperty = {};
 }
 </script>
 
