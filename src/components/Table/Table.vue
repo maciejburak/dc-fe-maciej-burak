@@ -326,29 +326,49 @@ export default class Table extends Vue {
     margin-left: 20px;
   }
 }
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
   .page-container {
     width: 100vw;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   .page-container {
-    width: 120vw;
+    width: 115vw;
+  }
+}
+@media (max-width: 800px) {
+  .page-container {
+    width: 130vw;
   }
 }
 @media (max-width: 700px) {
   .page-container {
-    width: 140vw;
+    width: 150vw;
   }
 }
-@media (max-width: 570px) {
+@media (max-width: 600px) {
   .page-container {
     width: 180vw;
   }
 }
-@media (max-width: 440px) {
+@media (max-width: 600px) {
+  .page-container {
+    width: 180vw;
+  }
+}
+@media (max-width: 500px) {
   .page-container {
     width: 220vw;
+  }
+}
+@media (max-width: 400px) {
+  .page-container {
+    width: 270vw;
+  }
+}
+@media (max-width: 350px) {
+  .page-container {
+    width: 300vw;
   }
 }
 </style>
