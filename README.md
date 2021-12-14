@@ -1,4 +1,9 @@
-# rickandmorty
+# Rick and Morty characters app
+
+### DEMO
+```
+https://dazzling-minsky-edd875.netlify.app/
+```
 
 ## Project setup
 ```

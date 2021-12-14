@@ -123,6 +123,7 @@ export default class SearchBar extends Vue {
   height: 170px;
   width: 132px;
   z-index: 99;
+  background:white;
 }
 .searchBar-select-option {
   width: 132px;
