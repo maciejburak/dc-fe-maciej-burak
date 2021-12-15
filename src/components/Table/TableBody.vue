@@ -69,7 +69,7 @@ export default class TableBody extends Vue {
     }
   }
   addToFavourites(exactCharacter: Character): void {
-    if (this.$store.state.favourites.includes(exactCharacter)) {
+    if (this.favouritesCharacters.includes(exactCharacter.id)) {
       this.$store.dispatch("deleteFromFav", exactCharacter);
       this.favouritesCharacters = this.favouritesCharacters.filter(
         (character) => character !== exactCharacter.id

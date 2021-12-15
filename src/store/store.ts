@@ -14,7 +14,7 @@ export default new Vuex.Store({
     },
     removeFromFav: function (state: State, payload: Character) {
       state.favourites = state.favourites.filter(
-        (character) => character !== payload
+        (character) => character.id !== payload.id
       );
     },
   },
